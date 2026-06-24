@@ -1,0 +1,8 @@
+import logging          # Для логирования
+import random           # Для генерации случайных чисел (капча)
+import re               # Для проверки спама (регулярные выражения)
+import asyncio          # Для асинхронного выполнения (таймер)
+from datetime import datetime  # Для работы с датой и временем
+from typing import Dict # Для аннотации типов
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
